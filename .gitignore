@@ -1,0 +1,58 @@
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python bytecode and caches ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# --- Secrets and environment-specific files (.env.example stays tracked) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+id_ecdsa*
+
+# --- Packaging and build output ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Generated output and input (the .gitkeep placeholders stay tracked) ---
+output/*
+!output/.gitkeep
+input/*
+!input/.gitkeep
+*.log
+
+# --- Word temporary/lock files (created while a document is open in Word) ---
+~$*
+
+# --- Editors, assistant local state and operating-system files ---
+.idea/
+.vscode/
+# Only the personal, machine-local assistant settings are ignored; shared project
+# instructions (for example CLAUDE.md or .claude/settings.json) may be committed.
+.claude/settings.local.json
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,5 @@
+# Normalise text files to LF in the repository and in working copies (the project uses LF throughout).
+* text=auto eol=lf
+
+# Word documents are binary: never convert line endings or attempt text diffs.
+*.docx binary

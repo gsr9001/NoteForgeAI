@@ -1,0 +1,31 @@
+# Gradient Descent Basics
+
+Gradient descent is an optimization algorithm that repeatedly moves parameters in the
+direction that reduces a loss function. The size of each move is set by the learning rate.
+
+## Key ideas
+
+- Loss function: measures how wrong the model is
+- Learning rate: the step size
+  - Too large: training diverges
+  - Too small: training is slow
+
+1. Compute the gradient of the loss.
+2. Update the parameters.
+3. Repeat until the loss stops improving.
+
+```python
+for step in range(100):
+    grad = compute_grad(params)
+    params -= lr * grad
+```
+
+| Term | Meaning |
+|------|---------|
+| Epoch | One pass over the data |
+| Batch | A subset used per update |
+
+> Start with a small learning rate and increase it carefully.
+
+A final paragraph that wraps across
+two lines in the source text.

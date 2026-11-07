@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Hidden Costs of Vector Databases - Infra Weekly</title>
+<meta property="og:title" content="The Hidden Costs of Vector Databases">
+<meta property="og:site_name" content="Infra Weekly">
+<meta name="author" content="Daniel Okafor">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"NewsArticle","headline":"The Hidden Costs of Vector Databases",
+"datePublished":"2025-06-02T12:00:00+00:00","isAccessibleForFree":false,
+"author":{"@type":"Person","name":"Daniel Okafor"}}
+</script>
+</head>
+<body>
+<nav>Home Archive</nav>
+<div class="single-post-container">
+<h1 class="post-title">The Hidden Costs of Vector Databases</h1>
+<div class="available-content">
+<div class="body markup">
+<p>Every team that adopts a vector database starts with the same assumption: storage is cheap, so the bill will be small. In my experience advising a dozen startups over the past two years, that assumption holds for roughly the first month. After that, three costs appear that nobody put in the budget, and they grow faster than the data does.</p>
+<h2>Cost one: memory, not disk</h2>
+<p>Approximate nearest neighbour indexes are fast because they live in memory. A collection of ten million vectors with 768 dimensions needs far more RAM than the raw file size suggests, because the index structure adds its own overhead on top of the vectors themselves. Teams are often surprised when a database that looked small on disk requires an expensive instance to run.</p>
+<h2>Cost two: re-embedding</h2>
+<p>Embedding models improve, and every time you switch to a better one you must re-embed the whole corpus. That is a compute bill, a downtime risk, and an engineering project all at once. I will walk through the numbers for a realistic corpus below.</p>
+</div>
+</div>
+<div class="paywall-jump" data-component-name="PaywallToDOM"></div>
+<div class="paywall">
+<h2 class="paywall-title">This post is for paid subscribers</h2>
+<div class="paywall-cta"><a class="button primary" href="/subscribe">Subscribe</a></div>
+<div class="paywall-login">Already a paid subscriber? <a href="/sign-in">Sign in</a></div>
+</div>
+</div>
+<footer>Infra Weekly</footer>
+</body>
+</html>
